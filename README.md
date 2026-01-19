@@ -14,7 +14,7 @@ Este repositório faz parte do curso **Git e GitHub** da Udemy, cujo objetivo é
 
 ---
 
-> 🔧 Instalando o Git no seu computador
+## 🔧 Instalando o Git no seu computador
 
 Para instalar o git em sua maquina, acesse o site e faça o download:
 
@@ -103,15 +103,15 @@ git branch
 
 Após finalizar o desenvolvimento em uma branch, você deve unir (merge) suas alterações à branch principal.
 
-Passo 1 — Voltar para a branch (`main`)**
+Passo 1 — Voltar para a branch (`main`)
 ```bash
 git checkout main
 ```
-Passo 2 — Atualizar a branch (`main`)** com o repositório remoto
+Passo 2 — Atualizar a branch (`main`) com o repositório remoto
 ```bash
 git pull origin main
 ```
-Passo 3 — Fazer o merge da branch de trabalho na (`main`)**
+Passo 3 — Fazer o merge da branch de trabalho na (`main`)
 ```bash
 git merge nome-da-branch
 ```
