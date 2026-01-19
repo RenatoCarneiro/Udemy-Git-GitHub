@@ -14,7 +14,7 @@ Este repositório faz parte do curso **Git e GitHub** da Udemy, cujo objetivo é
 
 ---
 
-> ## 🔧 Instalando o Git no seu computador
+> 🔧 Instalando o Git no seu computador
 
 Para instalar o git em sua maquina, acesse o site e faça o download:
 
@@ -62,6 +62,24 @@ git commit -m "Primeiro commit geral da pasta"
 
 O parametro -m seguido da mensagem entre aspas fornece uma descrição para o commit que está sendo realizado
 
+A partir de agora, todos os arquivos estão trackeados
+
+---
+
+> ## 🔧 Associando e sincronizando com o GitHub
+Crie um repositorio no GitHub
+
+Agora vamos associar o repositorio local ao GitHub com o seguinte comando
+```bash
+git remote add origin https://github.com/RenatoCarneiro/seu-repositorio.git
+```
+O comando `git remote add origin` é utilizado para **associar (conectar)** o repositório local a um repositório remoto no GitHub.
+
+Agora vamos fazer nosso primeiro push
+```bash
+git push -u origin main
+```
+Provavelmente o seu repositório no git deve ter sido populado com todos os arquivos da sua pasta local
 ---
 
 > ## 🔧 Comandos de verificação
