@@ -33,7 +33,22 @@ Ao longo do curso, serão abordados os seguintes tópicos:
 
 > ⚠️ *Esta lista pode ser atualizada conforme o curso evolui.*
 
-> ## 🔧 Comando para clonar o repositório
+> ## 🔧 Instalando o Git no seu computador
+
+Para instalar o git em sua maquina, acesse o site e faça o download:
+
+```bash
+https://git-scm.com/install/
+
+*Primeiros comandos*
+*Inicialmente você precisa cadastrar um user, e-mail e uma branch default normalmente main*
+
+```bash
+git config --global user.name "Seu Usuario    
+git config --global user.email seuemail@email.com
+git config --global init.default branch main
+
+> ## 🔧 Comando para clonar esse repositório
 
 ```bash
 git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
