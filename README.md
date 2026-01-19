@@ -32,3 +32,9 @@ Ao longo do curso, serão abordados os seguintes tópicos:
 - [ ] Boas práticas e fluxo de trabalho  
 
 > ⚠️ *Esta lista pode ser atualizada conforme o curso evolui.*
+
+> ## 🔧 Comando para clonar o repositório
+
+```bash
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+
