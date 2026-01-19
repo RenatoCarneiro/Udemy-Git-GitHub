@@ -37,13 +37,30 @@ git config --global init.default branch main
 ```
 > *Iniciando o git em um diretório*
 
-Crie um diretorio para o seu novo projeto, você pode clonar esse repositorio nesse novo diretório.
+Crie um diretorio para em seu computador, você pode clonar esse repositorio nesse novo diretório.
 Para iniciar o git nesse repositório novo, navegue até a pasta pelo terminal e rode esse comando
 
 ```bash
 git init
 ```
 Uma pasta oculta será criada ./git, nessa pasta fica todo o controle de versionamento
+
+Nesse modelo, estamos usando apenas a nossa maquina para guardar as versões, é necessario trackear todos os arquivos fazendo um primeiro commit geral de todos os arquivos que estão na pasta
+
+Note, o git funciona em três partes, *WORK* > *STAGE* > *COMMIT*
+
+Inicialmente você está trabalhando na "camada" WORK, para mover todos os arquivos para a stage
+```bash
+git add .
+```
+O comando git add . ou git add all move todos os arquivos para a stage, você pode ir digitando o comando git status para verificar o estado atual
+
+Para iniciar o git, precisamos fazer um primeiro commit geral, pra ele criar os snapshots dos arquivos
+```bash
+git commit -m "Primeiro commit geral da pasta"
+```
+
+O parametro -m seguido da mensagem entre aspas fornece uma descrição para o commit que está sendo realizado
 
 ---
 
