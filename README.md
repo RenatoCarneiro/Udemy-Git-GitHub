@@ -66,6 +66,72 @@ A partir de agora, todos os arquivos estão trackeados
 
 ---
 
+> ## 🔧 Criando e trabalhando com diferentes *Branches*
+
+Branches permitem que você trabalhe em novas funcionalidades, correções ou experimentos **sem afetar diretamente a branch principal (`main`)**.  
+Cada branch representa uma linha independente de desenvolvimento.
+
+Utilizar branches separadas é uma boa prática porque:
+
+- Evita quebrar o código que já está em produção  
+- Permite trabalhar em paralelo com outras pessoas  
+- Facilita revisão de código via Pull Request  
+- Organiza melhor o histórico de commits  
+
+---
+
+## 🌱 Criar uma nova branch
+
+Cria uma nova branch a partir da branch atual.
+```bash
+git branch nome-da-branch
+```
+## ⚡️ Criar e já entrar na nova branch
+
+Cria a branch e já muda para ela em um único comando.
+```bash
+git checkout -b nome-da-branch
+```
+
+## 📋 Listar todas as branches
+
+Mostra as branches locais e indica em qual você está atualmente.
+```bash
+git branch
+```
+## 🔀 Fazer merge de uma branch na main
+
+Após finalizar o desenvolvimento em uma branch, você deve unir (merge) suas alterações à branch principal.
+
+Passo 1 — Voltar para a branch (`main`)**
+```bash
+git checkout main
+```
+Passo 2 — Atualizar a branch (`main`)** com o repositório remoto
+```bash
+git pull origin main
+```
+Passo 3 — Fazer o merge da branch de trabalho na (`main`)**
+```bash
+git merge nome-da-branch
+```
+
+## 🗑 Apagar uma branch após o merge
+
+Depois que a branch já foi integrada, é uma boa prática removê-la.
+
+Apagar branch local
+```bash
+git branch -d nome-da-branch
+```
+
+Apagar branch remoto (caso você tenha criado alguma no GitHub)
+```bash
+git push origin --delete nome-da-branch
+```
+
+---
+
 > ## 🔧 Associando e sincronizando com o GitHub
 Crie um repositorio no GitHub
 
@@ -80,6 +146,7 @@ Agora vamos fazer nosso primeiro push
 git push -u origin main
 ```
 Provavelmente o seu repositório no git deve ter sido populado com todos os arquivos da sua pasta local
+
 ---
 
 > ## 🔧 Comandos de verificação
