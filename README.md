@@ -19,13 +19,13 @@
 ## 📌 Requisitos
 
 - Conta no GitHub
-- Conhecimento minimo na navegação no terminal de comandos
+- Conhecimento mínimo na navegação no terminal de comandos
 
 ---
 
 ## 🔧 Instalando o Git no seu computador
 
-Para instalar o git em sua maquina, acesse o site e faça o download:
+Para instalar o git em sua máquina, acesse o site e faça o download:
 
 ```bash
 https://git-scm.com/install/
@@ -33,11 +33,11 @@ https://git-scm.com/install/
 
 > *Primeiros comandos*
 
-Inicialmente você precisa cadastrar
+Inicialmente, você precisa cadastrar:
 
 - user 
 - e-mail
-- branch default normalmente main
+- branch default (normalmente main)
 
 Abra o terminal de comandos em seu computador
 
@@ -48,7 +48,7 @@ git config --global init.default branch main
 ```
 > *Iniciando o git em um diretório*
 
-Crie um diretorio em seu computador.
+Crie um novo diretório em seu computador.
 Para iniciar o git nesse repositório novo, navegue até a pasta pelo terminal e rode esse comando
 
 ```bash
@@ -56,22 +56,24 @@ git init
 ```
 Uma pasta oculta será criada ./git, nessa pasta fica todo o controle de versionamento
 
-Nesse modelo, estamos usando apenas a nossa maquina para guardar as versões, é necessario trackear todos os arquivos fazendo um primeiro commit geral de todos os arquivos que estão na pasta
+Nesse modelo, estamos usando apenas a nossa máquina para guardar as versões, é necessário trackear todos os arquivos fazendo um primeiro commit geral de todo o conteúdo que estão na pasta
 
-Note, o git funciona em três partes, *WORK* > *STAGE* > *COMMIT*
+Note, o git funciona em três partes, *WORK* → *STAGE* → *COMMIT*
 
 Inicialmente você está trabalhando na "camada" WORK, para mover todos os arquivos para a stage
 ```bash
 git add .
 ```
-O comando git add . ou git add all move todos os arquivos para a stage, você pode ir digitando o comando git status para verificar o estado atual
+O comando *git add .* ou *git add all* move todos os arquivos para a stage, você pode ir digitando o comando git status para verificar o estado atual
 
 Para iniciar o git, precisamos fazer um primeiro commit geral, pra ele criar os snapshots dos arquivos
 ```bash
 git commit -m "Primeiro commit geral da pasta"
 ```
 
-O parametro -m seguido da mensagem entre aspas fornece uma descrição para o commit que está sendo realizado
+O parâmetro -m seguido da mensagem entre aspas fornece uma descrição para o commit que está sendo realizado.
+
+🚨 Sempre forneça informações claras aqui!!!
 
 A partir de agora, todos os arquivos estão trackeados
 
@@ -144,9 +146,9 @@ git push origin --delete nome-da-branch
 ---
 
 > ## 🔧 Associando e sincronizando com o GitHub
-Crie um repositorio no GitHub
+Crie um repositório no GitHub
 
-Agora vamos associar o repositorio local ao GitHub com o seguinte comando
+Agora vamos associar o repositório local ao GitHub com o seguinte comando
 ```bash
 git remote add origin https://github.com/RenatoCarneiro/seu-repositorio.git
 ```
@@ -156,7 +158,9 @@ Agora vamos fazer nosso primeiro push
 ```bash
 git push -u origin main
 ```
-Provavelmente o seu repositório no git deve ter sido populado com todos os arquivos da sua pasta local
+Provavelmente o seu repositório no git deve ter sido populado com todos os arquivos da sua pasta local.
+
+Pronto, seu projeto está versionado no ambiente em nuvem, pronto para ser compartilhado!
 
 ---
 
